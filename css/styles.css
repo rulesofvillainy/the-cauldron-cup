@@ -239,6 +239,22 @@ img {
   text-decoration: none;
 }
 
+.nav-links a.nav-link--highlight {
+  color: var(--color-accent);
+  font-weight: 700;
+  animation: nav-pulse 2.4s ease-in-out infinite;
+}
+
+.nav-links a.nav-link--highlight:hover {
+  color: var(--color-accent-2);
+  text-decoration: none;
+}
+
+@keyframes nav-pulse {
+  0%, 100% { text-shadow: 0 0 6px rgba(212, 240, 58, 0.4); }
+  50%       { text-shadow: 0 0 14px rgba(212, 240, 58, 0.9), 0 0 28px rgba(212, 240, 58, 0.3); }
+}
+
 .btn {
   display: inline-block;
   border: none;

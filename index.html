@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Black Cauldron Cup | October 9-11, 2026</title>
+  <title>The Cauldron Cup | October 9-11, 2026</title>
   <meta name="description"
     content="Black Cauldron Cup - a placeholder/demo fan tournament site clone. All content is fictional." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,15 +21,15 @@
   <header class="site-header">
     <nav class="nav-bar">
       <a href="#" class="brand">
-        <img src="img/bcc_logo_small.png" alt="Black Cauldron Cup logo" class="brand-logo" />
-        The Black Cauldron Cup
+        <img src="img/tcc_logo_plain.png" alt="The Cauldron Cup logo" class="brand-logo" />
+        The Cauldron Cup
       </a>
       <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
       <div class="nav-links">
         <a href="#events">Events</a>
         <a href="#team">Production Team</a>
         <a href="#venue">Venue</a>
-        <!-- <a href="#artist">Featured Artist</a> -->
+        <a href="#artist" class="nav-link--highlight">Featured Artist</a>
         <a href="#contact">Contact</a>
         <a href="#faq">FAQ</a>
       </div>
@@ -40,10 +40,10 @@
   <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <img src="img/bcc_logo_full.png" alt="Black Cauldron Cup" class="hero-logo" />
+      <img src="img/tcc_logo_plain.png" alt="The Cauldron Cup Logo" class="hero-logo" />
       <div class="hero-eyebrow">Rules of Villainy X Impact Gaming Center <br> Presents
       </div>
-      <h1>The Black Cauldron Cup</h1>
+      <h1>The Cauldron Cup</h1>
 
       <p class="tagline">
         A three-day Unofficial Disney Lorcana tournament event featuring $6,000+ in cash and prizing. The biggest Disney
@@ -343,7 +343,7 @@
       <p style="color: var(--color-text-muted); font-size: 0.92rem; margin: 0 0 28px;">
         Tickets can be purchased on location at
         <strong style="color: var(--color-primary);">Impact Gaming Center</strong>
-        during the Black Cauldron Cup weekend.
+        during The Cauldron Cup weekend.
       </p>
       <button class="btn btn-outline"
         onclick="document.getElementById('popover-walkin-tickets').classList.remove('open'); document.body.style.overflow='';">Close</button>
@@ -473,9 +473,9 @@
   </section>
 
   <!-- ===================== FEATURED ARTIST ===================== -->
-  <section id="artist" class="section section-alt" style="display: none !important;">
+  <section id="artist" class="section section-alt">
     <div class="container">
-      <h2 class="section-heading">Artist Signings</h2>
+      <h2 class="section-heading">Featured Artist</h2>
       <p class="section-subheading"></p>
 
       <div class="artist-layout">
@@ -512,29 +512,65 @@
       <h3>Artist Details</h3>
       <dl class="popover-info">
         <dt>Availability</dt>
-        <dd>Saturday & Sunday</dd>
+        <dd>Saturday &amp; Sunday</dd>
         <dt>Saturday Hours</dt>
-        <dd>10am - 5pm</dd>
-        <dt>Saturday Hours</dt>
-        <dd>10am - 3pm</dd>
-        <dt>Personalized Signings</dt>
-        <dd>Price TBD</dd>
-        <dt>Non-Personalized Signings</dt>
-        <dd>Price TBD</dd>
-        <dt>Doodle/Sketch</dt>
-        <dd>Price TBD</dd>
-        <dt>Full Color Drawing</dt>
-        <dd>Price TBD</dd>
-        <dt>Artist Prints Available</dt>
+        <dd>10am – 5pm</dd>
+        <dt>Sunday Hours</dt>
         <dd>TBD</dd>
-        <dt>Artist Print Pricing</dt>
-        <dd>TBD</dd>
-        <dt>Payment Methods Accepted</dt>
-        <dd>TBD</dd>
+      </dl>
+
+      <h4
+        style="margin: 18px 0 8px; color: var(--color-primary); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;">
+        Card Autographs &amp; Sketches</h4>
+      <dl class="popover-info">
+        <dt>Personalized Autograph</dt>
+        <dd>$5 / Card (any rarity)</dd>
+        <dt>Collectors Autograph</dt>
+        <dd>$15 / Card (any rarity below Legendary)</dd>
+        <dt>Collectors Autograph</dt>
+        <dd>$25 / Card (Legendary / Epic)</dd>
+        <dt>Collectors Autograph</dt>
+        <dd>$45 / Card (Enchanted / Promo / Iconic)</dd>
+      </dl>
+
+      <h4
+        style="margin: 18px 0 8px; color: var(--color-primary); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;">
+        Add-Ons</h4>
+      <dl class="popover-info">
+        <dt>Mini Doodle</dt>
+        <dd>+ $10 / Card</dd>
+        <dt>Fancy Autograph</dt>
+        <dd>+ $10 / Card</dd>
+        <dt>Single Color Sketch</dt>
+        <dd>+ $100 / Card (and up)</dd>
+        <dt>Full Color Sketch</dt>
+        <dd>+ $200 / Card (and up)</dd>
+      </dl>
+
+      <h4
+        style="margin: 18px 0 8px; color: var(--color-primary); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;">
+        Custom Art (8.5×11)</h4>
+      <dl class="popover-info">
+        <dt>Head Shot</dt>
+        <dd>$150</dd>
+        <dt>Bust</dt>
+        <dd>$250</dd>
+        <dt>Torso</dt>
+        <dd>$300</dd>
+        <dt>Full Body</dt>
+        <dd>$400</dd>
+        <dt>+ Color</dt>
+        <dd>+ $100</dd>
+      </dl>
+
+      <h4
+        style="margin: 18px 0 8px; color: var(--color-primary); font-size: 1rem; text-transform: uppercase; letter-spacing: 0.08em;">
+        Links</h4>
+      <dl class="popover-info">
         <dt>Instagram</dt>
-        <dd><a href="https://www.instagram.com/camkendell" target="_blank">https://www.instagram.com/camkendell</a></dd>
+        <dd><a href="https://www.instagram.com/camkendell" target="_blank">@camkendell</a></dd>
         <dt>Website</dt>
-        <dd><a href="https://camkendell.com/" target="_blank">https://camkendell.com/</a></dd>
+        <dd><a href="https://camkendell.com/" target="_blank">camkendell.com</a></dd>
       </dl>
     </div>
   </div>
@@ -808,7 +844,7 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <div class="container">
-      &copy; 2026 Rules of Villainy. Disney Lorcana is property of Disney/Ravensburger. The Black Cauldron Cup is an
+      &copy; 2026 Rules of Villainy. Disney Lorcana is property of Disney/Ravensburger. The Cauldron Cup is an
       Unofficial Community run event.
     </div>
   </footer>
