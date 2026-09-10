@@ -400,6 +400,21 @@ img {
   paint-order: stroke fill;
 }
 
+.hero-qualifier {
+  font-family: 'Oswald', sans-serif;
+  font-size: clamp(0.75rem, 1.8vw, 0.95rem);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-2) 50%, var(--color-accent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: -4px 0 18px;
+  opacity: 0.92;
+  filter: drop-shadow(0 0 10px rgba(46, 232, 200, 0.3));
+}
+
 .hero-eyebrow {
   color: var(--color-accent);
   font-weight: 600;
@@ -1202,6 +1217,23 @@ img {
   margin: 0 0 12px;
 }
 
+.popover-prize-heading--qualifier {
+  color: var(--color-accent-2);
+  border-top-color: rgba(255, 200, 80, 0.25);
+}
+
+/* Two-column prize grid */
+.popover-prizes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 24px;
+}
+
+.popover-prizes-grid > div + div {
+  border-left: 1px solid var(--color-border);
+  padding-left: 24px;
+}
+
 /* Outer prize list */
 .popover-prizes {
   list-style: none;
@@ -1271,6 +1303,15 @@ img {
 
   .event-card-actions {
     flex-direction: column;
+  }
+
+  .popover-prizes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .popover-prizes-grid > div + div {
+    border-left: none;
+    padding-left: 0;
   }
 }
 
