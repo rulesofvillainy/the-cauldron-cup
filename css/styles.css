@@ -1436,168 +1436,58 @@ img {
 }
 
 /* ==========================================================================
-   Live Stream Announcement & Hero Showcase
+   Hero Stream Button
    ========================================================================== */
 
-/* ---------- Top Announcement Bar ---------- */
-.live-topbar {
-  background: linear-gradient(90deg, #1b0409 0%, #300c15 35%, #180b2a 70%, #08111e 100%);
-  border-bottom: 1px solid rgba(255, 51, 68, 0.4);
-  padding: 8px 16px;
-  position: relative;
-  z-index: 60;
-  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.5);
-}
-
-.live-topbar-inner {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-text);
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.live-topbar-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(229, 9, 20, 0.22);
-  border: 1px solid rgba(255, 51, 68, 0.7);
-  color: #ff5566;
-  padding: 2px 8px;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.live-topbar-link {
-  color: var(--color-accent);
-  font-weight: 700;
-  text-decoration: underline;
-  transition: color 0.15s ease;
-}
-
-.live-topbar-link:hover {
-  color: var(--color-accent-2);
-}
-
-/* ---------- Pulsing Live Indicators ---------- */
-.live-dot {
-  width: 9px;
-  height: 9px;
-  background-color: #ff3344;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 0 0 rgba(255, 51, 68, 0.8);
-  animation: live-pulse-dot 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
-}
-
-@keyframes live-pulse-dot {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 51, 68, 0.8);
-  }
-  70% {
-    transform: scale(1.05);
-    box-shadow: 0 0 0 9px rgba(255, 51, 68, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(255, 51, 68, 0);
-  }
-}
-
-/* ---------- Nav Link Live Indicator ---------- */
-.nav-links a.nav-link--live {
-  color: #ff6677 !important;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.15s ease;
-}
-
-.nav-links a.nav-link--live:hover {
-  color: #ff8899 !important;
-  text-decoration: none;
-}
-
-.live-dot-nav {
-  width: 7px;
-  height: 7px;
-  background-color: #ff3344;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 8px #ff3344;
-  animation: live-pulse-dot 1.8s infinite cubic-bezier(0.66, 0, 0, 1);
-}
-
-/* ---------- Big Red Square Live Button ---------- */
-.hero-live-wrap {
-  margin: 32px auto 0;
+.hero-stream-bar {
+  margin-bottom: 24px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
-.btn-live-square {
-  background: linear-gradient(135deg, #ff0000 0%, #c40000 100%);
+.btn-hero-stream {
+  background: #e50914;
   color: #ffffff !important;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  gap: 14px;
-  padding: 18px 44px;
+  gap: 10px;
+  padding: 12px 28px;
   font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
-  letter-spacing: 0.08em;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  border-radius: 0; /* Square corners */
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 30px rgba(255, 0, 0, 0.6), 0 8px 25px rgba(0, 0, 0, 0.7);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease, border-color 0.15s ease;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 16px rgba(229, 9, 20, 0.45), 0 2px 6px rgba(0, 0, 0, 0.5);
+  transition: transform 0.15s ease, background 0.15s ease, box-shadow 0.15s ease;
   text-decoration: none;
 }
 
-.btn-live-square:hover {
-  background: linear-gradient(135deg, #ff1a1a 0%, #d80000 100%);
+.btn-hero-stream:hover {
+  background: #ff1a26;
   color: #ffffff !important;
-  transform: translateY(-3px) scale(1.02);
-  box-shadow: 0 0 45px rgba(255, 0, 0, 0.85), 0 12px 30px rgba(0, 0, 0, 0.8);
-  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(229, 9, 20, 0.65), 0 3px 8px rgba(0, 0, 0, 0.6);
   text-decoration: none;
 }
 
-.btn-live-square:active {
-  transform: translateY(0) scale(1);
+.btn-hero-stream:active {
+  transform: translateY(0);
 }
 
-.live-yt-icon {
+.stream-yt-icon {
   flex-shrink: 0;
   display: inline-block;
 }
 
 @media (max-width: 640px) {
-  .hero-live-wrap {
-    margin-top: 24px;
+  .hero-stream-bar {
+    margin-bottom: 18px;
   }
 
-  .btn-live-square {
-    width: 100%;
-    max-width: 380px;
-    padding: 15px 22px;
-    font-size: 1.15rem;
-    gap: 10px;
+  .btn-hero-stream {
+    font-size: 0.95rem;
+    padding: 10px 20px;
   }
 }
